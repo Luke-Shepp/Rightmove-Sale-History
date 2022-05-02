@@ -1,0 +1,26 @@
+.rm-sale-history {
+    background: white;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.rm-sale-history table {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.rm-sale-history tr {
+    background: rgb(23, 86, 155);
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.rm-sale-history table tr td {
+    padding: 5px;
+}
+
+.rm-sale-history table tr td:last-child {
+    width: 100%;
+}

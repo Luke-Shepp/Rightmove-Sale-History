@@ -1,0 +1,16 @@
+{
+    "name": "Rightmove Improvements",
+    "description": "Improvements to rightmove",
+    "version": "0.0.5",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "css": ["inject.css"],
+            "js": ["inject.js"],
+            "matches": ["https://www.rightmove.co.uk/*"]
+        }
+    ]
+  }
