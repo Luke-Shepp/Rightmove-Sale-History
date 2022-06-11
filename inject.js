@@ -93,7 +93,8 @@ function buildDiv(transactions, currentPrice) {
 
         const numericCurrentPrice = currentPrice.replace(/\D/g, '');
         const numericLastSalePrice = transactions[0].soldPrice.replace(/\D/g, '')
-        const currentPercentageDifference = Math.round(numericCurrentPrice / numericLastSalePrice * 100);
+        const currentNumericDifference = numericCurrentPrice - numericLastSalePrice;
+        const currentPercentageDifference = Math.round(currentNumericDifference / numericCurrentPrice * 100);
 
         html += `
             <tr>
